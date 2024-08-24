@@ -17,8 +17,8 @@ print(result)
 st.title('인공지능 작사가')
 content = st.text_input('노래의 주제를 제시해주세요:')
 st.write("노래의 주제는", content)
-if st.button("시 작성 요청하기"):
+if st.button("노래 작성 요청하기"):
     result = chat_model.predict(content + "에 대한 노래 가사를 써줘.")
     st.write(result)
-    
+
 
